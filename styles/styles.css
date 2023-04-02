@@ -3,9 +3,8 @@
 
 .page {
   background: white;
-  min-width: 1512px;
+  width: 1512px;
   max-width: 100%;
-  /* height: 4000px; */
   padding: 0;
   margin: 0 auto;
   font-family: 'Rubik', 'Helvetica', 'Arial', sans-serif;
@@ -147,7 +146,7 @@
 .cards {
   /* display: flex; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 312px 312px 312px 312px;
   column-gap: 56px;
   row-gap: 50px;
   margin-top: 50px;
