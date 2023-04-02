@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT-Search</title>
+  <meta name="keywords" content="html, css, bootstrap" />
+  <meta name="author" content="Chernogorov Viacheslav" />
+  <meta name="description" content="NFT-Search" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body class="page">
+  <div class="page__decorate page__decorate_small"></div>
+  <div class="page__decorate page__decorate_middle"></div>
+  <header class="header">
+    <img src="./img/Header_logo.svg" alt="Логотип сайта" class="header__logo">
+    <div class="header__input-container">
+      <input type="search" class="form-control header__input" placeholder="Поиск...">
+      <img src="./img/Header_input_ico_search.svg" alt="Стрелочка вниз" role="button" class="header__input-ico">
+    </div>
+    
+    <div class="header__buttons">
+      <button type="button" class="btn header__button header__button_enter">Вход</button>
+      <button type="button" class="btn header__button header__button_register">Регистрация</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="filters">
+      <select class="form-select" aria-label="Выберете фильтр">
+        <option selected>Фильтры</option>
+        <option value="1">Один</option>
+        <option value="2">Два</option>
+        <option value="3">Три</option>
+      </select>
+      <select class="form-select" aria-label="Выбор по умолчанию">
+        <option selected>По умолчанию</option>
+        <option value="1">Один</option>
+        <option value="2">Два</option>
+        <option value="3">Три</option>
+      </select>
+    </div>
+    <section class="cards">
+      <div class="card">
+          <img src="./img/Card_Foto_1.png" alt="Картинка карточки" class="card__image">
+          <div class="card__info">
+            <h2 class="card__title">Без слов</h2>
+            <div class="card__portfolio">
+              <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+              <div>
+                <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+                <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+              </div>
+            </div>
+            <div class="card__price">
+              <p class="desc">Редкость:</p>
+              <p class="value value_unic">уникальная</p>
+              <p class="desc">Цена:</p>
+              <p class="value value_price">от 500 ₽</p>
+            </div>
+          </div>
+          <button class="card__button">Купить</button>
+      </div>
+      <div class="card ">
+        <img src="./img/Card_Foto_2.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_3.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_4.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_1.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_2.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_3.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_4.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>  
+      <div class="card">
+        <img src="./img/Card_Foto_1.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_2.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_3.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_4.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_1.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_2.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_3.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_4.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_1.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_2.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_3.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_4.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_1.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_2.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_3.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>
+      <div class="card">
+        <img src="./img/Card_Foto_4.png" alt="Картинка карточки" class="card__image">
+        <div class="card__info">
+          <h2 class="card__title">Без слов</h2>
+          <div class="card__portfolio">
+            <img src="./img/Card_Mini_profile_foto.png" alt="Маленькая картинка" class="card__portfolio-ico">
+            <div>
+              <h3 class="card__name">Настя Ивлеева Вячеславовна</h3>
+              <p class="card__check">проверено<img src="./img/Card_ico_Cheked.svg" alt="Иконка проверки" class="card__check-ico"></p>
+            </div>
+          </div>
+          <div class="card__price">
+            <p class="desc">Редкость:</p>
+            <p class="value value_unic">уникальная</p>
+            <p class="desc">Цена:</p>
+            <p class="value value_price">от 500 ₽</p>
+          </div>
+        </div>
+        <button class="card__button">Купить</button>
+      </div>  
+    </section>
+    <nav class="page-numbers">
+      <img src="./img/Nav_arrow_left.svg" alt="Стрелка влево" class="arrow">
+      <div class="lists">
+        <a href="#" class="list list_active" aria-current="true">1</a>
+        <a href="#" class="list">2</a>
+        <a href="#" class="list">3</a>
+        <a href="#" class="list">4</a>
+        <a href="#" class="list">5</a>
+      </div>
+      <img src="./img/Nav_arrow_right.svg" alt="Стрелка вправо">
+    </nav>
+  </main>
+  <div class="page__decorates page__decorate page__decorates_large"></div>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__location">
+        <img src="./img/Footer_logo.svg" alt="Логотип" class="footer__logo">
+        <ul class="adress">
+          <li class="footer__list">Россия, г. Москва, 119002</li>
+          <li class="footer__list">ул. Арбат 51/1/8А</li>
+          <li class="footer__list">e-mail: info@lionmax.ru</li>
+        </ul>
+        <div class="footer__social">
+          <img src="./img/Footer_ico_Twitter.svg" alt="Логотип twitter">
+          <img src="./img/Footer_ico_VK.svg" alt="Логотип vk">
+        </div>
+      </div>
+      <nav class="footer__info">
+        <div class="nft nft_pad">
+          <p class="footer__link footer__link_main">NFT</p>
+          <a href="#" class="footer__link">Что такое NFT</a>
+          <a href="#" class="footer__link">Создайте NFT с нами</a>
+        </div>
+        <div class="company">
+          <p class="footer__link footer__link_main">Компания</p>
+          <a href="#" class="footer__link">О нас</a>
+          <a href="#" class="footer__link">Отправить запрос</a>
+        </div>
+        <div class="another">
+          <p class="footer__link footer__link_main">Другое</p>
+          <a href="#" class="footer__link">Условия использования</a>
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__decorate">
+      <img src="./img/Footer_ico_Star.svg" alt="Картинка звезды" class="footer__star">
+    </div>
+  </footer>
+</body>
+</html>
