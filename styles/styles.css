@@ -7,7 +7,7 @@
   max-width: 100%;
   padding: 0;
   margin: 0 auto;
-  font-family: 'Rubik', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -18,38 +18,41 @@
   position: relative;
   overflow-x: hidden;
 }
-.page__decorate{
+.page__decorate {
   position: absolute;
   background: rgba(253, 212, 70, 0.5);
   z-index: 2;
-  object-fit: contain;
-  object-position: bottom right;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom right;
+     object-position: bottom right;
 }
-.page__decorate_small{
+.page__decorate_small {
   width: 554px;
   height: 509px;
   top: 160px;
   left: -336px;
   filter: blur(137.129px);
 }
-.page__decorate_middle{
+.page__decorate_middle {
   width: 798px;
   height: 733px;
   top: 1962px;
   left: 1238px;
   filter: blur(197.442px);
 }
-.page__decorates{
+.page__decorates {
   background-image: url(../img/Slice\ 3.png);
   width: 1514px;
   height: 564px;
   z-index: 2;
   border: none;
 }
-.page__decorates_large{
+.page__decorates_large {
   bottom: 388px;
   right: 0;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -57,26 +60,25 @@
   padding-top: 18px;
   flex-shrink: 0;
 }
-.header__logo{
+.header__logo {
   width: 222px;
   height: 103px;
   margin-left: 45px;
 }
-.header__input-container{
+.header__input-container {
   width: 814px;
   height: 60px;
   position: relative;
   margin-left: 22px;
 }
-.header__input{
+.header__input {
   max-width: 708px;
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   padding-left: 45px;
 }
-
-.header__input-ico{
+.header__input-ico {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -85,58 +87,54 @@
 .header__input-ico:hover {
   filter: brightness(80%);
 }
-.header__buttons{
+.header__buttons {
   padding-right: 48px;
   display: flex;
   gap: 20px;
 }
-
-.header__button{
+.header__button {
   min-width: 190px;
   min-height: 60px;
-
-  font-family: 'Rubik';
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 24px;
   color: #000000;
   transition: filter 0.3s linear 0s;
+  border-radius: 30px;
 }
 .header__button:hover {
   filter: brightness(80%);
 }
-.header__button_enter{
+.header__button_enter {
   border: 2px solid #FDD446;
-  border-radius: 30px;
 }
-.header__button_register{
+.header__button_register {
   background: #FDD446;
-  border-radius: 30px;
 }
 
-.main{
+.main {
   padding-left: 45px;
   padding-right: 48px;
   flex: 1;
 }
+
 .filters {
   display: flex;
   justify-content: space-between;
-
   margin-top: 49px;
 }
-.form-select{
+
+.form-select {
   width: 216px;
   height: 40px;
-  font-family: 'Rubik';
-
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   /* identical to box height, or 100% */
-
   color: #000000;
 }
 .form-select:nth-of-type(2) {
@@ -144,15 +142,16 @@
 }
 
 .cards {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 312px 312px 312px 312px;
-  column-gap: 56px;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
   row-gap: 50px;
   margin-top: 50px;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -177,47 +176,42 @@
 .card__title {
   margin: 0;
   padding: 0;
-  font-family: 'Istok Web';
+  font-family: "Istok Web", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 50px;
-  /* identical to box height, or 250% */
   color: #000000;
 }
 .card__portfolio {
   display: flex;
   gap: 8px;
-
 }
 .card__portfolio-ico {
-  Width: 70px;
-  Height: 70px;
+  width: 70px;
+  height: 70px;
 }
 .card__name {
   margin: 0;
   padding: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   /* or 125% */
-
-
   color: #000000;
 }
 .card__check {
   margin: 0;
   padding: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   /* identical to box height, or 156% */
   color: #FF9900;
-
 }
 .card__check-ico {
   padding-left: 6px;
@@ -229,72 +223,17 @@
   grid-template-rows: 1fr 1fr;
   row-gap: 9px;
 }
-.desc {
-  margin: 0;
-  padding: 0;
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  /* identical to box height, or 180% */
-
-
-  color: #000000;
-}
-.value {
-  margin: 0;
-  padding: 0;
-  max-height: 38px;
-  align-self: center;
-  text-align: center;
-
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 38px;
-  /* identical to box height, or 238% */
-  color: #000000; 
-}
-.value_unic {
-  max-width: 130px;
-
-  border: solid 2px #F79B47;
-  /* border-image: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
-  border-image-slice: 1; */
-  border-radius: 10px;
-  /* background-image: 
-    linear-gradient(white, white), 
-    linear-gradient(to right, #FFC107, #EC851A);
-  background-origin: border-box;
-  background-clip: content-box, border-box; */
-  position: relative;
-  z-index: 0;
-}
-
-.value_price {
-  background: #FDD446;
-  border-radius: 10px;
-  font-family: 'Rubik';
-
-  max-width: 110px;
-}
 .card__button {
   margin: 0;
   padding: 0;
-
   margin-top: 12px;
   margin-bottom: 19px;
-
-  font-family: 'Istok Web';
+  font-family: "Istok Web", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height, or 150% */
   color: #000000;
-
   background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
   border: none;
   border-radius: 20px;
@@ -303,8 +242,46 @@
   align-self: center;
   z-index: 1000;
 }
-/*------------------------------------------- */
-.page-numbers{
+
+.desc {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.value {
+  margin: 0;
+  padding: 0;
+  max-height: 38px;
+  align-self: center;
+  text-align: center;
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  color: #000000;
+}
+.value_unic {
+  max-width: 130px;
+  border: solid 2px #FF9900;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+}
+.value_price {
+  background: #FDD446;
+  border-radius: 10px;
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
+  max-width: 110px;
+}
+
+.page-numbers {
   display: flex;
   margin-top: 50px;
   margin-bottom: 160px;
@@ -312,27 +289,25 @@
   position: relative;
   z-index: 1000;
 }
+
 .lists {
   display: flex;
   gap: 10px;
 }
+
 .list {
-  font-family: 'Istok Web';
+  font-family: "Istok Web", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 38px;
-  /* identical to box height, or 211% */
   color: #000000;
-
   background: none;
   border: none;
   width: 40px;
   height: 40px;
-
   display: flex;
   align-items: center;
-
   position: relative;
   text-decoration: none;
   justify-content: center;
@@ -341,14 +316,12 @@
 .list_active {
   background: #FDD446;
   border-radius: 50%;
-
   margin-left: 20px;
-
 }
-.footer{
+
+.footer {
   display: flex;
   flex-direction: column;
-  /* flex-shrink: 0; */
   background: #FDD446;
   max-height: 399px;
   padding-left: 112px;
@@ -356,7 +329,7 @@
   position: relative;
   z-index: 1000;
 }
-.footer__content{
+.footer__content {
   width: 100%;
   padding-top: 36.82px;
   display: flex;
@@ -367,40 +340,16 @@
   height: 46.41px;
   margin-left: -8px;
 }
-.adress{
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__info{
+.footer__info {
   padding: 0;
   margin: 0;
   display: flex;
   gap: 80px;
 }
-
-.nft {
-  margin: 0;
-  padding: 0;
-  max-width: 123px;
-}
-.company{
-  margin: 0;
-  padding: 0;
-  max-width: 158px;
-}
-
-.another{
-  margin: 0;
-  padding: 0;
-  max-width: 210px;
-}
-.footer__list{
+.footer__list {
   padding: 0;
   margin: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -410,10 +359,17 @@
   list-style: none;
   box-sizing: border-box;
 }
-.footer__link{
+.footer__list:first-of-type {
+  padding-top: 14px;
+  padding-bottom: 6px;
+}
+.footer__list:nth-of-type(2) {
+  padding-bottom: 8px;
+}
+.footer__link {
   padding: 0;
   margin: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -424,9 +380,8 @@
   text-decoration: none;
   display: block;
 }
-
-.footer__link_main{
-  font-family: 'Istok Web';
+.footer__link_main {
+  font-family: "Istok Web", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -434,43 +389,57 @@
   /* or 180% */
   padding-bottom: 12px;
 }
-
-.footer__list:first-of-type {
-  padding-top: 14px;
-  padding-bottom: 6px;
-}
-.footer__list:nth-of-type(2) {
-  padding-bottom: 8px;
-}
-
-.footer__social{
+.footer__social {
   margin-top: 42px;
   display: flex;
   gap: 25px;
   cursor: pointer;
 }
-
-.footer__decorate{
+.footer__decorate {
   margin-top: 45px;
   margin-bottom: 85px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   position: relative;
 }
-.footer__star{
+.footer__star {
   position: absolute;
   top: -49px;
   left: 45%;
 }
+
+.adress {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nft {
+  margin: 0;
+  padding: 0;
+  max-width: 123px;
+}
+
+.company {
+  margin: 0;
+  padding: 0;
+  max-width: 158px;
+}
+
+.another {
+  margin: 0;
+  padding: 0;
+  max-width: 210px;
+}
+
 .copyright {
   position: absolute;
   top: 20px;
   right: 0;
-
-  font-family: 'Rubik';
+  font-family: "Rubik", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  /* or 133% */
   color: rgba(0, 0, 0, 0.5);
-}
+}/*# sourceMappingURL=styles.css.map */

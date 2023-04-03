@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+.page {
+  background: $whiteColor;
+  width: 1512px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: $rubikFont;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+
+  &__decorate {
+    position: absolute;
+    background: $decorateColor;
+    z-index: 2;
+    object-fit: contain;
+    object-position: bottom right;
+
+    &_small {
+      width: 554px;
+      height: 509px;
+      top: 160px;
+      left: -336px;
+      filter: blur(137.129px);
+    }
+    &_middle {
+      width: 798px;
+      height: 733px;
+      top: 1962px;
+      left: 1238px;
+      filter: blur(197.442px);
+    }
+  }
+  &__decorates {
+    background-image: url(../img/Slice\ 3.png);
+    width: 1514px;
+    height: 564px;
+    z-index: 2;
+    border: none;
+
+    &_large {
+      bottom: 388px;
+      right: 0;
+    }
+  }
+}
+
