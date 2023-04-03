@@ -1,0 +1,67 @@
+@import './variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  flex-shrink: 0;
+
+  &__logo{
+    width: 222px;
+    height: 103px;
+    margin-left: 45px;
+  }
+  &__input-container{
+    width: 814px;
+    height: 60px;
+    position: relative;
+    margin-left: 22px;
+  }
+  &__input{
+    max-width: 708px;
+    height: 100%;
+    border: 1px solid $blackColorWithOpacity;
+    border-radius: 50px;
+    padding-left: 45px;
+  }
+  &__input-ico{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transition: filter 0.3s linear 0s;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+  &__buttons{
+    padding-right: 48px;
+    display: flex;
+    gap: 20px;
+  }
+  &__button{
+    min-width: 190px;
+    min-height: 60px;
+  
+    font-family: $rubikFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    color: $blackColor;
+    transition: filter 0.3s linear 0s;
+    border-radius: 30px;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+
+    &_enter {
+      border: 2px solid $orangeBaseColor; 
+    }
+    &_register {
+      background: $orangeBaseColor;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+@import './variables.scss';
+
+.main {
+  padding-left: 45px;
+  padding-right: 48px;
+  flex: 1;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 49px;
+}
+
+.form-select{
+  width: 216px;
+  height: 40px;
+  font-family: $rubikFont;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  color: $blackColor;
+
+  &:nth-of-type(2) {
+    max-width: 330px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 312px 312px 312px 312px;
+  column-gap: 56px;
+  row-gap: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 312px;
+  min-height: 630px;
+  align-items: center;
+  border: 1px solid $cardBorderColor;
+  z-index: 3;
+  background: transparent;
+
+  &__image {
+    display: flex;
+    width: 288px;
+    height: 321px;
+    margin-top: 12px;
+    z-index: 1000;
+  }
+
+  &__info {
+    padding-left: 12px;
+    z-index: 1000;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: $istokWebFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    color: $blackColor;
+  }
+
+  &__portfolio {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__portfolio-ico {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    font-family: $rubikFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 125% */
+    color: $blackColor;
+  }
+
+  &__check {
+    margin: 0;
+    padding: 0;
+    font-family: $rubikFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+    color: $cardCheckBaseColor;
+  }
+
+  &__check-ico {
+    padding-left: 6px;
+  }
+
+  &__price {
+    margin-top: 11px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 9px;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+  
+    margin-top: 12px;
+    margin-bottom: 19px;
+  
+    font-family: $istokWebFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: $blackColor;
+  
+    background: linear-gradient(90deg, $orangeBaseColor 0%, $orangeSecondBaseColor 100%);
+    border: none;
+    border-radius: 20px;
+    width: 265px;
+    min-height: 53px;
+    align-self: center;
+    z-index: 1000;
+  }
+}
+
+.desc {
+  margin: 0;
+  padding: 0;
+  font-family: $rubikFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: $blackColor;
+}
+
+.value {
+  margin: 0;
+  padding: 0;
+  max-height: 38px;
+  align-self: center;
+  text-align: center;
+
+  font-family: $rubikFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  color: $blackColor;
+
+  &_unic {
+    max-width: 130px;
+  
+    border: solid 2px $cardCheckBaseColor;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+  }
+  &_price {
+    background: $orangeBaseColor;
+    border-radius: 10px;
+    font-family: $rubikFont;
+  
+    max-width: 110px;
+  }
+}
+
+.page-numbers{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 160px;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.lists {
+  display: flex;
+  gap: 10px;
+}
+
+.list {
+  font-family: $istokWebFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 38px;
+  color: $blackColor;
+
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+  cursor: pointer;
+
+  &_active {
+    background: $orangeBaseColor;
+    border-radius: 50%;
+    margin-left: 20px;  
+  }
+}
