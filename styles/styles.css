@@ -461,3 +461,16 @@
   top: -49px;
   left: 45%;
 }
+.copyright {
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  color: rgba(0, 0, 0, 0.5);
+}
